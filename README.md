@@ -79,10 +79,6 @@ Initiate Entra ID Join
 
 
 
- Additional Join Confirmation
-
-![Join Success 2](screenshots/join_success (2).png)
-
 
 
  Verification
