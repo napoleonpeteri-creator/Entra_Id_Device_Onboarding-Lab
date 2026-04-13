@@ -45,39 +45,22 @@ This demonstrates real-world access control limitations in enterprise environmen
 
 Screenshots
 
-### VM Creation
-![VM Creation](screenshots/01-vm-creation.png)
 
-### Memory Configuration
-![Memory](screenshots/02-assign-memory.png)
-
-### Network Setup
-![Network](screenshots/03-network-config.png)
-
-### Windows Installation
-![Windows Install](screenshots/04-windows-install.png)
-
-### Entra Join Initiation
-![Join Start](screenshots/05-entra-join-init.png)
-
-### Authentication
-![Auth](screenshots/06-authentication.png)
-
-### Confirmation
-![Confirm](screenshots/07-confirmation.png)
-
-### Join Success
-![Success](screenshots/08-join-success.png)
-
-### Verification (dsregcmd)
-![Verification](screenshots/09-dsregcmd-verification.png)
-
-### Tenant Details
-![Tenant](screenshots/10-tenant-details.png)
-
-### Intune Access Error
-![RBAC](screenshots/11-intune-access-error.png)
-
+![Memory](screenshots/ASSIGN_MEMORY.png)
+![Network](screenshots/network_config.png)
+![Disk](screenshots/virtual_harddisk_connect.png)
+![Windows Install](screenshots/windows_install.png)
+![Authentication](screenshots/authentication.png)
+![Initiating Join](screenshots/INITIATING_ENTRA_ID_JOIN.png)
+![Confirmation](screenshots/confirmation.png)
+![Join Success](screenshots/join_success.png)
+![Join Success 2](screenshots/join_success (2).png)
+![Verification](screenshots/dsregcmd_verification.png)
+![Tenant Details](screenshots/tenant_details.png)
+![Intune Error](screenshots/intune_access_error.png)
+![Name and Location](screenshots/SPECIFY_NAME_AND_LOCATION.png)
+![VM Creation](screenshots/vm_creation.png)
+![OS Install](screenshots/operating_system_install.png)
 
 
 Skills Demonstrated
@@ -88,9 +71,4 @@ Skills Demonstrated
 . RBAC Troubleshooting
 
 
-
- Next Steps
-. Intune Enrollment
-. Sysmon Installation
-. Log forwarding to Splunk
 
