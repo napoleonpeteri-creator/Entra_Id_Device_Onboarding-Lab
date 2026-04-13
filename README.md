@@ -1,74 +1,113 @@
 Entra ID Device Onboarding Lab
 
 Overview
-This project demonstrates how to create a Windows virtual machine using 
-Hyper-V and join it to Microsoft Entra ID for enterprise identity management.
+
+This project demonstrates how to create a Windows virtual machine using Hyper-V and onboard it into Microsoft Entra ID for enterprise identity management.
 
 
 
- Lab Setup
-. Hyper-V Virtual Machine
-. Windows OS Installation
-. Default Switch Networking
+Lab Setup
 
+Hyper-V Virtual Machine Creation
+
+![VM Creation](screenshots/vm_creation.png)
+
+
+
+Specify Name and Location
+
+![Name and Location](screenshots/SPECIFY_NAME_AND_LOCATION.png)
+
+
+
+Assign Memory
+
+![Memory](screenshots/ASSIGN_MEMORY.png)
+
+
+ Configure Network
+
+![Network](screenshots/network_config.png)
+
+
+
+Configure Virtual Hard Disk
+
+![Disk](screenshots/virtual_harddisk_connect.png)
+
+
+
+Windows Installation
+
+Start Windows Installation
+
+![Windows Install](screenshots/windows_install.png)
+
+
+
+ Operating System Installation Process
+
+![OS Install](screenshots/operating_system_install.png)
 
 
  Entra ID Integration
-. Device joined to Microsoft Entra ID
-. Authentication using organizational account
-. Device registered successfully
+
+ Access Work or School (Before Join)
+
+![Before Join](screenshots/BEFORE_JOINING_DEVICE_TO_MICROSOFT_ENTRA_ID.png)
+
+
+
+Initiate Entra ID Join
+
+![Initiating Join](screenshots/INITIATING_ENTRA_ID_JOIN.png)
+
+
+ User Authentication
+
+![Authentication](screenshots/authentication.png)
+
+
+ Confirm Organization Join
+
+![Confirmation](screenshots/confirmation.png)
+
+
+ Device Successfully Joined
+
+![Join Success](screenshots/join_success.png)
+
+
+
+ Additional Join Confirmation
+
+![Join Success 2](screenshots/join_success (2).png)
 
 
 
  Verification
 
-Command used: dsregcmd /status
+ Verify Device Registration (dsregcmd)
+
+![Verification](screenshots/dsregcmd_verification.png)
 
 
 
-Result:
-. AzureAdJoined: YES
-. DeviceAuthStatus: SUCCESS
+ Tenant Details Confirmation
+
+![Tenant Details](screenshots/tenant_details.png)
 
 
 
  RBAC Observation
 
-While accessing Microsoft Intune:
+ Intune Access Restriction
 
-. Encountered **"Unauthorized" error**
-. Cause: Insufficient permissions (RBAC)
-
-This demonstrates real-world access control limitations in enterprise environments.
-
-
-
-Screenshots
-
-
-![Memory](screenshots/ASSIGN_MEMORY.png)
-![Network](screenshots/network_config.png)
-![Disk](screenshots/virtual_harddisk_connect.png)
-![Windows Install](screenshots/windows_install.png)
-![Authentication](screenshots/authentication.png)
-![Initiating Join](screenshots/INITIATING_ENTRA_ID_JOIN.png)
-![Confirmation](screenshots/confirmation.png)
-![Join Success](screenshots/join_success.png)
-![Join Success 2](screenshots/join_success (2).png)
-![Verification](screenshots/dsregcmd_verification.png)
-![Tenant Details](screenshots/tenant_details.png)
 ![Intune Error](screenshots/intune_access_error.png)
-![Name and Location](screenshots/SPECIFY_NAME_AND_LOCATION.png)
-![VM Creation](screenshots/vm_creation.png)
-![OS Install](screenshots/operating_system_install.png)
-
-
-Skills Demonstrated
-. Virtualization (Hyper-V)
-. Windows Deployment
-. Microsoft Entra ID Integration
-. Device Identity Verification
-. RBAC Troubleshooting
 
 
 
+ Key Takeaway
+
+This lab demonstrates practical enterprise device onboarding and highlights how RBAC policies can restrict access even after a successful device join.
+Access should be granted by intune Admin.
